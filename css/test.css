@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+section {
+    width: 80%;
+    height: 200px;
+margin: 15px 15%;
+box-shadow: 0 0 8px 10px rgb(217, 201, 201);
+display: flex;
+flex-wrap: wrap;
+justify-content: space-evenly;
+align-content: center;
+}
+.one div{
+    width: 80px;
+    height: 150px;
+    border: 50px solid brown; 
+    animation-name:styleOne;
+    animation-duration:5s ;
+    animation-iteration-count: infinite;
+   
+}.two div{
+    width: 80px;
+    height: 150px;
+    border: 50px solid rgb(232, 57, 109);
+    animation-name:styleTwo;
+    animation-duration:5s ;
+    animation-iteration-count: infinite;
+}
+.three div{
+    width: 80px;
+    height: 150px;
+    border: 50px solid rgb(99, 111, 158);
+    animation-name:styleThree;
+    animation-duration:5s ;
+    animation-iteration-count: infinite;
+}
+.four div{
+    width: 80px;
+    height: 150px;
+    border: 50px solid rgb(63, 109, 51);
+    animation-name:styleFour;
+    animation-duration:5s ;
+    animation-iteration-count: infinite;
+}
+@keyframes styleOne{
+0%,100%{
+    transform: skewx(20deg);
+}
+
+    50%{
+        transform:skewx(-20deg) ;
+    }
+}
+@keyframes styleTwo{
+    0%,100%{
+        transform: skewy(25deg);
+    }
+    
+        50%{
+            transform:skewy(-25deg) ;
+        }
+    }
+
+    @keyframes styleThree{
+        0%,100%{
+            transform: skew(25deg,25deg);
+        }
+        
+            50%{
+                transform:skew(-25deg,-25deg) ;
+            }
+        }
+        
+    @keyframes styleFour{
+        0%,100%{
+            transform: rotate(360deg);
+        }
+        
+            50%{
+                transform:rotate(0deg) ;
+            }
+        }
+    
